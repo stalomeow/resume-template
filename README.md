@@ -2,6 +2,8 @@
 
 个人使用的简历模板，使用 [Typst](https://github.com/typst/typst) 编写。
 
+建议配合 `Visual Studio Code` + `Typst Preview` + `Typst LSP` 使用。后两个是插件，提供了实时预览和一定程度的语法提示。
+
 ## 样例
 
 内容由 ChatGPT 生成。
