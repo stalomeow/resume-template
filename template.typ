@@ -17,7 +17,7 @@
     baseline: box-base-line,
     height: 1.0em,
     width: 1.25em,
-    align(center + horizon, image.decode(svg)),
+    align(center + horizon, image(bytes(svg))),
   )
 }
 
@@ -105,8 +105,7 @@
   }
 
   // 段落设置
-  show par: set block(spacing: 0.5em) // 段间距，但似乎没用？？
-  set par(justify: true, leading: par-leading) // 行间距
+  set par(justify: true, leading: par-leading, spacing: 0.6em) // 行间距和段间距
 
   // 全局变量，某些函数会用到
   set-var("theme-color", theme-color)
@@ -156,6 +155,8 @@
     // 后面 n 行正文
     ..body.pos().map(it => grid.cell(it, colspan: 2)),
   )
+
+  [#v(1.5em, weak: true)]
 }
 
 // 教育
